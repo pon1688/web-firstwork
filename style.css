@@ -1,0 +1,68 @@
+/**{
+  border: 1px solid #000;  /*  *{} -- body裡面的全部吃的到 */
+/*  }*/
+.contauner{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+
+}
+
+.center{
+  width: 500px;
+
+}
+.circle{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  cursor: pointer; /* 滑鼠移到上面鼠標會變化*/
+  border-radius: 50%;
+  top: 220px;
+  z-index: 5;
+}
+.c1{
+  left: 150px;
+}
+.c2{
+  left: 125px;
+}
+.c3{
+  left: 300px;
+}
+.ball{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  top: 227px;
+  left: 157px;
+  z-index: 5;
+  transition:
+}
+.color{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  border-left: 500px solid #ff88;
+  border-right: 500px solid #ccff;
+  transition: all is ease-in- ;
+  transform: translateX(0px);
+}
+
+#check1:checked~.ball {
+  transform: translateX(0px);
+}
+#check2:checked~.ball {
+  transform: translateX(75px);
+}
+#check1:checked~.ball {
+  transform: translateX(150px);
+}
